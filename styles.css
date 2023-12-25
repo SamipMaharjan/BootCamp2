@@ -1,0 +1,98 @@
+:root{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.rate{
+    font-weight: 400;
+    font-size: medium;
+    margin: 0;
+}
+
+.currency{
+    margin: 0;
+}
+
+.card{
+    background-color: #fe8e35;
+    color: white;
+    width: 100px;
+    height: 100px;
+    padding: 16px;
+    border-radius: 12px;
+
+    box-shadow: black;
+    margin-top: 9px;
+    margin-bottom: 9px;
+
+    box-shadow: -5px 1px 25px 2px  black;
+}
+
+.display-rate{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50vw;
+    justify-content: space-around;
+}
+
+.searchbar{
+    display: flex; 
+    flex-direction: column;
+}
+.search{
+    height: 25px;
+    width: 350px;
+    border-radius: 8px;
+    outline: none;
+    font-size: large;
+}
+.search-validation{
+    color: red;
+    font-size: small;
+}
+
+.searched-currency{
+    margin: 0px auto;
+    background-color: #ff9a00;
+    color: white;
+    width: 200px;
+    height: 200px;
+    padding: 16px;
+    border-radius: 12px;
+
+    box-shadow: black;
+    margin-top: 9px;
+    margin-bottom: 9px;
+    
+    font-size: xx-large;
+
+    box-shadow: -5px 1px 25px 2px  black;
+}
+.searched-rate{
+    font-size: large;
+}
+
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80vw;
+}
+
+.heading{
+    font-size: large;
+}
+
+.base-currency{
+    background-color: #a579dc;
+    color: white;
+    display: block;
+    padding: 5px 20px;
+    border-radius: 12px;
+    margin: 19px 10px;
+    width: 190px;
+}
+
+.all-cards{
+    display: flex;
+}
