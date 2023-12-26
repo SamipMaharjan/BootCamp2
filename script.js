@@ -49,7 +49,6 @@ fetch(`http://api.exchangeratesapi.io/v1/latest?access_key=${API_KEY}`)
     });
   });
 
-fetch(`http://api.exchangeratesapi.io/v1/symbols?access_key=${API_KEY}`);
 document
   .querySelector(".search")
   .addEventListener("input", getExchangeRateWithSymbolCurrency);
@@ -59,6 +58,7 @@ async function getExchangeRateWithSymbolCurrency(event) {
   const search_validation = document.querySelector(".search-validation");
 
   if (!latestCurrData.rates.hasOwnProperty(currency)) {
+    console.log("before return ", currency);
     search_validation.innerHTML = "Invalid currency";
     return;
   }
@@ -77,19 +77,3 @@ async function getExchangeRateWithSymbolCurrency(event) {
     return "err";
   }
 }
-
-// async function setCountryNames(currency) {
-//   const countriesData = await fetch(
-//     `http://api.exchangeratesapi.io/v1/latest?access_key=${API_KEY}`
-//   );
-//   document.querySelector(".country-name").innerHTML =
-//     countriesData.symbols[currency];
-// }
-
-// fetch(
-//   `http://api.exchangeratesapi.io/v1/timeseries?access_key=${API_KEY}&symbols=USD,CAD,JPY&start_date=2015-12-01&end_date=2015-12-24`
-// )
-//   .then((res) => res.json())
-//   .then((data) => {
-//     console.log("data exchange", data);
-//   });
